@@ -32,7 +32,7 @@ let calculator = {
                                   Number(this.displayVal));
             console.log(result);
             calculator.firstVal = calculator.displayVal;
-            calculator.displayVal = result;
+            calculator.displayVal = String(result);
             return calculator.displayVal;
         }
     },
@@ -55,10 +55,12 @@ let calculator = {
     getDisplayValue:
     function getDisplayValue() {
         return this.displayVal;
+    },
+    del:
+    function del() {
+        this.displayVal = this.displayVal.slice(0, this.displayVal.length - 1);
     }
 }
-
-
 
 // select elements with ids starting with "dig-"
 digits = document.querySelectorAll('button[id^=dig-]');
@@ -79,6 +81,10 @@ enter.addEventListener('click', enterClickHandler);
 
 clear = document.querySelector('#clear');
 clear.addEventListener('click', clearClickHandler);
+
+del = document.querySelector('#del');
+del.addEventListener('click', delClickHandler);
+
 
 function digitClickHandler(e) {
     display = document.querySelector('#display');
@@ -105,4 +111,9 @@ function enterClickHandler(e) {
 function clearClickHandler(e) {
     calculator.clear();
     document.querySelector('#display').innerText = '';
+}
+
+function delClickHandler(e) {
+    calculator.del();
+    document.querySelector('#display').innerText = calculator.getDisplayValue();
 }
