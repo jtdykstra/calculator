@@ -124,7 +124,7 @@ button {
     transition: all 0.1s;
 }
 
-button:hover, button:active {
+button:active {
     background-color: #3d3a3a;
     color: white;
 }
