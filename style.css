@@ -1,0 +1,130 @@
+@import "reset.css";
+
+body {
+    font-size: 16px;
+}
+#container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 13vh);
+    grid-template-rows: repeat(7, 13vh);
+    grid-template-areas:
+        "display display display display"
+        "clear plus minus mult"
+        "dig1 dig2 dig3 div"
+        "dig4 dig5 dig6 dot"
+        "dig7 dig8 dig9 del"
+        "dig0 enter enter enter";
+}
+
+.dig1 {
+    grid-area: dig1;
+}
+
+.dig2 {
+    grid-area: dig2;
+}
+
+.dig3 {
+    grid-area: dig3;
+}
+
+.dig4 {
+    grid-area: dig4;
+}
+
+.dig4 {
+    grid-area: dig4;
+}
+
+.dig5 {
+    grid-area: dig5;
+}
+
+.dig6 {
+    grid-area: dig6;
+}
+
+.dig7 {
+    grid-area: dig7;
+}
+
+.dig8 {
+    grid-area: dig8;
+}
+
+.dig9 {
+    grid-area: dig9;
+}
+
+.dig0 {
+    grid-area: dig0;
+}
+
+.digdot {
+    grid-area: dot;
+}
+
+.opstar {
+    grid-area: mult;
+}
+
+.opdiv {
+    grid-area: div;
+}
+
+.opplus {
+    grid-area: plus;
+}
+
+.opminus {
+    grid-area: minus;
+}
+
+.clear {
+    grid-area: clear;
+    text-align: center;
+}
+
+.enter {
+    grid-area: enter;
+}
+
+.del {
+    grid-area: del;
+}
+
+#display {
+    grid-area: display;
+    padding:0.35em 1.2em;
+    border:0.1em solid #3d3a3a;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;argin:0 0.3em 0.3em 0;
+}
+
+button {
+    padding:0.35em 1.2em;
+    border:0.1em solid #3d3a3a;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300; 
+    background-color: transparent;
+    color:#3d3a3a;
+    text-align:center;
+    transition: all 0.1s;
+}
+
+button:hover {
+    background-color: #3d3a3a;
+    color: white;
+}
