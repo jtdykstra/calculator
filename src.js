@@ -1,9 +1,3 @@
-// todo: "objectify"
-
-let displayVal = '';
-let firstVal = '';
-let op = '';
-
 let calculator = {
     displayVal: '',
     firstVal: '',
@@ -63,7 +57,7 @@ let calculator = {
 }
 
 // select elements with ids starting with "dig-"
-digits = document.querySelectorAll('button[id^=dig-]');
+digits = document.querySelectorAll('button[id^=dig]');
 console.table(digits);
 
 [...digits].forEach((digit) => {

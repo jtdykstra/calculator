@@ -20,80 +20,80 @@ body {
         "dig0 enter enter enter";
 }
 
-.dig1 {
+#dig1 {
     grid-area: dig1;
 }
 
-.dig2 {
+#dig2 {
     grid-area: dig2;
 }
 
-.dig3 {
+#dig3 {
     grid-area: dig3;
 }
 
-.dig4 {
+#dig4 {
     grid-area: dig4;
 }
 
-.dig4 {
+#dig4 {
     grid-area: dig4;
 }
 
-.dig5 {
+#dig5 {
     grid-area: dig5;
 }
 
-.dig6 {
+#dig6 {
     grid-area: dig6;
 }
 
-.dig7 {
+#dig7 {
     grid-area: dig7;
 }
 
-.dig8 {
+#dig8 {
     grid-area: dig8;
 }
 
-.dig9 {
+#dig9 {
     grid-area: dig9;
 }
 
-.dig0 {
+#dig0 {
     grid-area: dig0;
 }
 
-.digdot {
+#digdot {
     grid-area: dot;
 }
 
-.opstar {
+#opstar {
     grid-area: mult;
 }
 
-.opdiv {
+#opdiv {
     grid-area: div;
 }
 
-.opplus {
+#opplus {
     grid-area: plus;
 }
 
-.opminus {
+#opminus {
     grid-area: minus;
 }
 
-.clear {
+#clear {
     grid-area: clear;
     text-align: center;
 }
 
-.enter {
+#enter {
     grid-area: enter;
 }
 
-.del {
+#del {
     grid-area: del;
 }
 
